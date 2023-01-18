@@ -21,8 +21,8 @@ The data set contains the following diseases:
 
 ## Table of Contents
 * [General Info](#general-information)
-* [Technologies Used](#technologies-used)
 * [Conclusions](#conclusions)
+* [Technologies Used](#technologies-used)
 * [Acknowledgements](#acknowledgements)
 
 <!-- You can include any other section that is pertinent to your problem -->
@@ -31,9 +31,9 @@ The data set contains the following diseases:
 - The dataset consists of 2357 images of malignant and benign oncological diseases, which were formed from the International Skin Imaging Collaboration (ISIC).
 - The notebook on the assignment includes the following :
     - Data Reading/Data Understanding 
-    - Dataset Creation - Create train & validation dataset from the train directory with a batch size of 32. Also, resize images to 180*180.
-    - Dataset visualisation → Create a code to visualize one instance of all the nine classes present in the dataset 
-    - Model Building & training - Creating a custom CNN model for classification of images present in the dataset, including rescaling images to normalize pixel values between (0,1) and choosing an appropriate optimiser and loss function for model training and Training the model for ~20 epochs
+    - Dataset Creation - create train & validation dataset from the train directory with a batch size of 32. Also, resize images to 180*180.
+    - Dataset visualisation - visualize one instance of all the nine classes present in the dataset 
+    - Model Building & training - creating a custom CNN model for classification of images present in the dataset, including rescaling images to normalize pixel values between (0,1) and choosing an appropriate optimiser and loss function for model training and Training the model for ~20 epochs
     - Chosing an appropriate data augmentation strategy to resolve underfitting/overfitting 
     - Model Building & training on the augmented data
     - Examining the current class distribution in the training dataset and handling class imbalances by rectifying class imbalances present in the training dataset with Augmentor library.
@@ -43,7 +43,7 @@ The data set contains the following diseases:
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 ## Conclusions
-- The class rebalnce lragely improved the overall accuracy during training.
+- The class rebalnce largely improved the overall accuracy during training.
     - the training accuracy improved from 60% to 89~90%
     - the validation accuracy improved from 52 ~ 54% to around 85 ~ 86%
 - The overfitting was reduced by use of Dropouts after the convolution layer and the dense classification layer.
