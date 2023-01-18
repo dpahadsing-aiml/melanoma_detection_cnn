@@ -28,8 +28,16 @@ The data set contains the following diseases:
 <!-- You can include any other section that is pertinent to your problem -->
 
 ## General Information
-- The dataset consists of housing data for 1460 sales.
-- The notebook on the assignment includes data understanding, exploratory data analysis, data splitting for tarining and test, feature scaling, feature selection using RFE, model building using advanced regression involving data transformation & regularization (ridge and lasso), cross validation, hyperparameter tuning, model evaluation including validation of assumptions of linear regression- 
+- The dataset consists of 2357 images of malignant and benign oncological diseases, which were formed from the International Skin Imaging Collaboration (ISIC).
+- The notebook on the assignment includes the following :
+    - Data Reading/Data Understanding 
+    - Dataset Creation - Create train & validation dataset from the train directory with a batch size of 32. Also, resize images to 180*180.
+    - Dataset visualisation → Create a code to visualize one instance of all the nine classes present in the dataset 
+    - Model Building & training - Creating a custom CNN model for classification of images present in the dataset, including rescaling images to normalize pixel values between (0,1) and choosing an appropriate optimiser and loss function for model training and Training the model for ~20 epochs
+    - Chosing an appropriate data augmentation strategy to resolve underfitting/overfitting 
+    - Model Building & training on the augmented data
+    - Examining the current class distribution in the training dataset and handling class imbalances by rectifying class imbalances present in the training dataset with Augmentor library.
+    - Model Building & training on the rectified class imbalance data and Training the model for ~30 epochs
 
 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
