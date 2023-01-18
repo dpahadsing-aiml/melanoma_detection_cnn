@@ -43,11 +43,14 @@ The data set contains the following diseases:
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 ## Conclusions
-- Data has non-liniear relationship and data transformation was carried out to account for the same.
-- Between Ridge and Lasso, Lasso Regressor performed slighlty better.
-- Validation of assumptions of linear regression was successful
-- Model performance between Training and Test data set was comparable.
-- Hence it can be concluded as a good machine learning model with generalization and no overfitting.
+- The class rebalnce lragely improved the overall accuracy during training.
+    - the training accuracy improved from 60% to 89~90%
+    - the validation accuracy improved from 52 ~ 54% to around 85 ~ 86%
+- The overfitting was reduced by use of Dropouts after the convolution layer and the dense classification layer.
+    - the gap between the training and validation reduced to ~4%
+- Validation Accuracy of the model was hugely improved from 52 ~ 54% to around 85~86% by using data augmentation and class rebalancing.
+- Data augmentation added variations of the original image which helped the model generalize the learning.
+- Class imbalance can result in bad model performance, which can be addressed by adding a reasonable nos. of augmented images to each class, so that the effect of class imbalance is reduced.
 
 
 
@@ -58,15 +61,10 @@ The data set contains the following diseases:
 ## Technologies Used
 
 #### Programming Language & Environment
-- Python           - version 3.9.13
-- Jupyter Notebook - version 6.4.12
+- Python          
+- Jupyter Notebook / Google Colab
 
-#### Libraries
-- numpy            - version 1.23.2  for array manipulation
-- pandas           - version 1.4.3   for data manipulation
-- matplotlib       - version 3.5.3   for plotting
-- seaborn          - version 0.11.2  for plotting
-- scikit-learn     - version 1.1.2   for advanced regression related work
+
 
 <!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
 
@@ -75,7 +73,7 @@ The data set contains the following diseases:
 
 
 ## Contact
-Created by [@dpahadsing-aiml] - feel free to contact me!
+Created by [@dpahadsing-aiml]
 
 
 <!-- Optional -->
